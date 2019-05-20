@@ -1,0 +1,25 @@
+﻿@page
+@model Chatter.UI.Pages.Message.SendModel
+@{
+    ViewData["Title"] = "Send";
+}
+
+<h1>Send</h1>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h1 class="mt-t mb-3">Send</h1>
+        <asp-route></asp-route>
+        <form asp-route="send">
+            <div class="form-group">
+                <label asp-for="Input.Text"></label>
+                <input class="form-control" asp-for="Input.Text" />
+            </div>
+
+            <div class="mt-4 mb-4">
+                <button class="btn btn-primary" value="send">Send</button>
+            </div>
+        </form>
+    </div>
+</div>
